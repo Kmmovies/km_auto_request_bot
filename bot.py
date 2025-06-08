@@ -26,9 +26,9 @@ async def start_handler(c, m):
     user_id = m.from_user.id
     if not await Data.find_one({'id': user_id}): await Data.insert_one({'id': user_id})
     lazydeveloper_btn = [[
-        InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+RFj1JgpGXPwyMjA1')
+        InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+yBt9sXCJIg81N2M9')
     ]]
-    joinlink = f"https://t.me/+cNl8bhdGYw1hYWQx"
+    joinlink = f"https://t.me/+yBt9sXCJIg81N2M9"
     return await m.reply_text(text=START_TEXT.format(m.from_user.mention, joinlink), disable_web_page_preview=True)
           
 
@@ -80,9 +80,9 @@ async def req_accept(c, m):
     await c.approve_chat_join_request(chat_id, user_id)
     try: 
         lazydeveloper_btn = [[
-        InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+RFj1JgpGXPwyMjA1')
+        InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+yBt9sXCJIg81N2M9')
         ]] 
-        joinlink = f"https://t.me/+cNl8bhdGYw1hYWQx"
+        joinlink = f"https://t.me/+yBt9sXCJIg81N2M9"
         await c.send_message(
             user_id, 
             ACCEPTED_TEXT.format(user=m.from_user.mention, chat=m.chat.title, joinlink=joinlink), 
