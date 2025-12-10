@@ -26,9 +26,9 @@ async def start_handler(c, m):
     user_id = m.from_user.id
     if not await Data.find_one({'id': user_id}): await Data.insert_one({'id': user_id})
     lazydeveloper_btn = [[
-        InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+_WhibeG5KhI2NDJl')
+        InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+i9BBTzFSEeAzZGI1')
     ]]
-    joinlink = f"https://t.me/+_WhibeG5KhI2NDJl"
+    joinlink = f"https://t.me/+i9BBTzFSEeAzZGI1"
     return await m.reply_text(text=START_TEXT.format(m.from_user.mention, joinlink), disable_web_page_preview=True)
           
 
@@ -99,4 +99,5 @@ Bot.run()
 
 
 #crafted by - the one and only LazyDeveloperr
+
 
