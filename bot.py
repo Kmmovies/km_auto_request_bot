@@ -28,7 +28,7 @@ async def start_handler(c, m):
     lazydeveloper_btn = [[
         InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+sLmvrgSPppg3ODA1')
     ]]
-    joinlink = f"https://t.me/+sLmvrgSPppg3ODA1"
+    joinlink = f"https://t.me/+hOJ3ROeBhJA5NTZl"
     return await m.reply_text(text=START_TEXT.format(m.from_user.mention, joinlink), disable_web_page_preview=True)
           
 
@@ -82,7 +82,7 @@ async def req_accept(c, m):
         lazydeveloper_btn = [[
         InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+sLmvrgSPppg3ODA1')
         ]] 
-        joinlink = f"https://t.me/+sLmvrgSPppg3ODA1"
+        joinlink = f"https://t.me/+hOJ3ROeBhJA5NTZl"
         await c.send_message(
             user_id, 
             ACCEPTED_TEXT.format(user=m.from_user.mention, chat=m.chat.title, joinlink=joinlink), 
