@@ -6,7 +6,7 @@ from os import environ as env
 import asyncio, datetime, time
 
 
-ACCEPTED_TEXT = "Hey {user}\n\nYour Request For {chat} Is Accepted ✅\n\n𝗝𝗢𝗜𝗡 👉: @km_moviesvk18\n\nSend /start to Get more Updates.\n\nJoin👇👇\n{joinlink}"
+ACCEPTED_TEXT = "Hey {user}\n\nYour Request For {chat} Is Accepted ✅\n\n𝗝𝗢𝗜𝗡 👉: @km_moviesvk20\n\nSend /start to Get more Updates.\n\nJoin👇👇\n{joinlink}"
 START_TEXT = "Hai {}\n\nI am Auto Request Accept Bot With Working For All Channel. Add Me In Your Channel To Use \n\nJoin👇👇\n{}"
 
 API_ID = int(env.get('API_ID'))
@@ -28,7 +28,7 @@ async def start_handler(c, m):
     lazydeveloper_btn = [[
         InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+sLmvrgSPppg3ODA1')
     ]]
-    joinlink = f"https://t.me/+hOJ3ROeBhJA5NTZl"
+    joinlink = f"https://t.me/+WNiK3LAlQIg1MmM1"
     return await m.reply_text(text=START_TEXT.format(m.from_user.mention, joinlink), disable_web_page_preview=True)
           
 
@@ -82,7 +82,7 @@ async def req_accept(c, m):
         lazydeveloper_btn = [[
         InlineKeyboardButton('❤. Kannada Monsters .🍟', url='https://t.me/+sLmvrgSPppg3ODA1')
         ]] 
-        joinlink = f"https://t.me/+hOJ3ROeBhJA5NTZl"
+        joinlink = f"https://t.me/+WNiK3LAlQIg1MmM1"
         await c.send_message(
             user_id, 
             ACCEPTED_TEXT.format(user=m.from_user.mention, chat=m.chat.title, joinlink=joinlink), 
